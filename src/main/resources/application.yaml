@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  main:
+    web-application-type: servlet
+  datasource:
+    url: jdbc:postgresql://localhost:5332/
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+    show_sql: true
+  mail:
+    password: drmwjqgbwtiqbrkd
+    username: peacedead.nikitenko@gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
